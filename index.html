@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_Form</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background: url(img/pexels-juan-pablo-serrano-arenas-1242348.jpg) no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 250px;
+            height: 350px;
+            /* border:3px solid aqua; */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: transparent;
+        }
+        .container h1{
+            text-align: center;
+            margin:0px 0px 30px 0px;
+            font-size: 50px;
+            text-decoration: underline;
+            /* text-shadow: 0px 5px; */
+            /* padding: 0; */
+        }
+        .inputBox1 input, .inputBox2 input{
+            width: 100%;
+            padding: 25px 0px;
+            border: none;
+            /* border: 5px solid black; */
+            /* margin: 0 10px; */
+            outline: none;
+            background: none;
+            text-align: center;
+            font-size: 20px;
+        }
+        .inputBox1 input{
+            margin-bottom: 15px;
+        }
+        .inputBox2 input{
+            margin-bottom: 20px;
+        }
+        .btn{
+            position: relative;
+            padding:10px 30px;
+            left: 33%;
+            border-radius: 8px;
+            box-shadow: 3px 5px black;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            background-color: crimson;
+            color: white;
+            font-size: 18px;
+        }
+        .container:hover{
+            background-color: white;
+            transition: 5s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <div class="inputBox1">
+            <input type="text" placeholder=" Enter Your Username">
+        </div>
+        <div class="inputBox2">
+            <input type="password" name="" placeholder="Enter Your Password">
+        </div>
+        <input type="button" value="Login" class="btn">
+    </div>
+</body>
+</html>
